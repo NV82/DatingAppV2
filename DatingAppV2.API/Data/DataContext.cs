@@ -1,5 +1,7 @@
 ﻿using DatingAppV2.API.Entities;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading.Tasks;
 
 namespace DatingAppV2.API.Data
 {
@@ -10,5 +12,10 @@ namespace DatingAppV2.API.Data
         }
 
         public DbSet<AppUser> Users { get; set; }
+
+        internal Task<bool> AddAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

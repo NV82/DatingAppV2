@@ -10,5 +10,9 @@ namespace DatingAppV2.API.Entities
         public int Id { get; set; }
 
         public string UserName { get; set; }
+
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswardSalt { get; set; }
     }
 }
